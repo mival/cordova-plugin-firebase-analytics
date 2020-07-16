@@ -61,7 +61,7 @@
 }
 
 - (void)resetAnalyticsData:(CDVInvokedUrlCommand *)command {
-    [FIRAnalytics resetAnalyticsData];
+    // [FIRAnalytics resetAnalyticsData]; // crashing on IOS
 
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
